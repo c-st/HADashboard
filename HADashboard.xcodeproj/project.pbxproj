@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83A7B23725BF7F3300472BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7B23625BF7F3300472BBF /* AppDelegate.swift */; };
+		64F6996E25C07A7500C2FFC5 /* HADashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6996D25C07A7500C2FFC5 /* HADashboardApp.swift */; };
 		83A7B23925BF7F3300472BBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7B23825BF7F3300472BBF /* ContentView.swift */; };
 		83A7B23B25BF7F3400472BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A7B23A25BF7F3400472BBF /* Assets.xcassets */; };
 		83A7B23E25BF7F3400472BBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A7B23D25BF7F3400472BBF /* Preview Assets.xcassets */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64F6996D25C07A7500C2FFC5 /* HADashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADashboardApp.swift; sourceTree = "<group>"; };
 		83A7B23325BF7F3300472BBF /* HADashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HADashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83A7B23625BF7F3300472BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A7B23825BF7F3300472BBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83A7B23A25BF7F3400472BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A7B23D25BF7F3400472BBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -59,7 +59,6 @@
 		83A7B23525BF7F3300472BBF /* HADashboard */ = {
 			isa = PBXGroup;
 			children = (
-				83A7B23625BF7F3300472BBF /* AppDelegate.swift */,
 				83A7B23825BF7F3300472BBF /* ContentView.swift */,
 				83A7B23A25BF7F3400472BBF /* Assets.xcassets */,
 				83A7B23F25BF7F3400472BBF /* Main.storyboard */,
@@ -67,6 +66,7 @@
 				83A7B24325BF7F3400472BBF /* HADashboard.entitlements */,
 				83A7B23C25BF7F3400472BBF /* Preview Content */,
 				83A7B24A25BF7F6600472BBF /* ControlCenterView.swift */,
+				64F6996D25C07A7500C2FFC5 /* HADashboardApp.swift */,
 			);
 			path = HADashboard;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A7B23925BF7F3300472BBF /* ContentView.swift in Sources */,
-				83A7B23725BF7F3300472BBF /* AppDelegate.swift in Sources */,
+				64F6996E25C07A7500C2FFC5 /* HADashboardApp.swift in Sources */,
 				83A7B24B25BF7F6600472BBF /* ControlCenterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.christian-stangier.HADashboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -331,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.christian-stangier.HADashboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
