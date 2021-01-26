@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "HAClient",
+        "repositoryURL": "https://github.com/c-st/HAClient",
+        "state": {
+          "branch": "master",
+          "revision": "1736bc5f000a5d173d7d39c332b4af7761066834",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
