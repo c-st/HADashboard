@@ -1,19 +1,18 @@
-//
-//  ContentView.swift
-//  HADashboard
-//
-//  Created by Christian Stangier on 25.01.21.
-//
-
 import SwiftUI
+import HAClient
 
 struct ContentView: View {
+    @EnvironmentObject var registry: Registry
+    
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        List(registry.areas, id: \.id) { area in
+            Text(area.name)
+//            List(registry.entitiesInArea(areaId: area.id), id: \.id) { entity in
+//                Text(entity.id)
+//            }
+        }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
