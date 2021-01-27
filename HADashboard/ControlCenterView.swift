@@ -105,13 +105,13 @@ struct Control: View {
             HStack(spacing: 8) {
                 Slider(value: $value)
 //                    .accentColor(.red)
-
-//                Image(systemName: image)
-//                    .font(.system(size: 14, weight: .semibold))
-//                    .foregroundColor(Color(NSColor.secondaryLabelColor))
-//                    .frame(width: 28, height: 28)
-//                    .background(EffectsView(material: NSVisualEffectView.Material.popover, blendingMode: NSVisualEffectView.BlendingMode.behindWindow))
-//                    .cornerRadius(14)
+                // NSImage(systemSymbolName: "hammer", accessibilityDescription: nil)
+                Image(systemName: image)
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(Color(NSColor.secondaryLabelColor))
+                    .frame(width: 28, height: 28)
+                    .background(EffectsView(material: NSVisualEffectView.Material.popover, blendingMode: NSVisualEffectView.BlendingMode.behindWindow))
+                    .cornerRadius(14)
             }
         }
         .padding(9)

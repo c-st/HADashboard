@@ -13,6 +13,7 @@
 		83A7B23E25BF7F3400472BBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A7B23D25BF7F3400472BBF /* Preview Assets.xcassets */; };
 		83A7B24B25BF7F6600472BBF /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7B24A25BF7F6600472BBF /* ControlCenterView.swift */; };
 		83A7B24F25BF7FDF00472BBF /* HAClient in Frameworks */ = {isa = PBXBuildFile; productRef = 83A7B24E25BF7FDF00472BBF /* HAClient */; };
+		83C4D7B525C17928009D46F3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4D7B425C17928009D46F3 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		83A7B24225BF7F3400472BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A7B24325BF7F3400472BBF /* HADashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HADashboard.entitlements; sourceTree = "<group>"; };
 		83A7B24A25BF7F6600472BBF /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
+		83C4D7B425C17928009D46F3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				64F6996D25C07A7500C2FFC5 /* HADashboardApp.swift */,
 				83A7B23825BF7F3300472BBF /* ContentView.swift */,
+				83C4D7B425C17928009D46F3 /* ViewModel.swift */,
 				83A7B23A25BF7F3400472BBF /* Assets.xcassets */,
 				83A7B24225BF7F3400472BBF /* Info.plist */,
 				83A7B24325BF7F3400472BBF /* HADashboard.entitlements */,
@@ -153,6 +156,7 @@
 			files = (
 				83A7B23925BF7F3300472BBF /* ContentView.swift in Sources */,
 				64F6996E25C07A7500C2FFC5 /* HADashboardApp.swift in Sources */,
+				83C4D7B525C17928009D46F3 /* ViewModel.swift in Sources */,
 				83A7B24B25BF7F6600472BBF /* ControlCenterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,15 +1,18 @@
-import SwiftUI
 import HAClient
+import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var registry: Registry
-    
+    @EnvironmentObject var viewModel: ViewModel
+
     var body: some View {
-        List(registry.areas, id: \.id) { area in
-            Text(area.name)
-//            List(registry.entitiesInArea(areaId: area.id), id: \.id) { entity in
-//                Text(entity.id)
-//            }
+        HStack {
+            List(viewModel.areas, id: \.id) { area in
+                Text(area.name)
+            }
+
+            List(viewModel.devices, id: \.id) { device in
+                Text("Device \(device.id)")
+            }
         }
     }
 }

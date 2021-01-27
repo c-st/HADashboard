@@ -21,11 +21,11 @@ import SwiftUI
 struct Store {
     public let registry: Registry
 
-    init() {
-        let connection = WebSocketConnection(endpoint: "ws://homeassistant.raspberrypi.localdomain/api/websocket")
+    init(endpoint: String, token: String) {
+        let connection = WebSocketConnection(endpoint: endpoint)
         let client = HAClient(messageExchange: connection)
         client.authenticate(
-            token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIzNmFmZDMyMjdkYzQ0YmNlOGZiNDRhNTFiZDA4MDdkZSIsImlhdCI6MTYxMTI3MTQ2NiwiZXhwIjoxOTI2NjMxNDY2fQ.YDRag0Hvq0lrTvu4Rt_z9NAQAJJNManAP0g4wHBFRq0",
+            token: token,
             onConnection: {
                 client.requestRegistry()
                 client.requestStates()
@@ -40,18 +40,20 @@ struct Store {
 
 @main
 struct HADashboardApp: App {
-    @StateObject var registry = Store().registry
-
     #if canImport(UIKit)
         @UIApplicationDelegateAdaptor(AppDelegateAdaptor.self) private var appDelegate
     #elseif canImport(AppKit)
         @NSApplicationDelegateAdaptor(AppDelegateAdaptor.self) private var appDelegate
     #endif
 
+    let store = Store(
+        endpoint: "ws://homeassistant.raspberrypi.localdomain/api/websocket",
+        token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIzNmFmZDMyMjdkYzQ0YmNlOGZiNDRhNTFiZDA4MDdkZSIsImlhdCI6MTYxMTI3MTQ2NiwiZXhwIjoxOTI2NjMxNDY2fQ.YDRag0Hvq0lrTvu4Rt_z9NAQAJJNManAP0g4wHBFRq0")
+
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(registry)
+                .environmentObject(ViewModel(store.registry))
         }
     }
 }
